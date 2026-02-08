@@ -1,0 +1,13 @@
+[package]
+name = "live_server_rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+env = "1.0.1"
+notify = "8.2.0"
+tokio = { version = "1.49.0", features = ["full"] }
+warp = { version = "0.4.2", features = ["websocket", "server"] }
+futures-util = "0.3.31"
+mime_guess = "2.0"
+hyper = "0.14"
