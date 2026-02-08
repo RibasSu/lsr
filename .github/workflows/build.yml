@@ -135,6 +135,7 @@ jobs:
         with:
           name: ${{ matrix.asset_name }}
           path: target/${{ matrix.target }}/release/${{ matrix.artifact_name }}
+          if-no-files-found: warn
 
   release:
     name: Create Release
